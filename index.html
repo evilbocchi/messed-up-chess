@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link href="/css/chessboard-1.0.0.min.css" rel="stylesheet" />
+  <link href="/logo.png" rel="icon" type="image/png" />
+  <title>messed up chess</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script type="text/javascript" src="/js/libs/prettify.js"></script>
+  <script type="text/javascript" src="/js/libs/chessboard-1.0.0.min.js"></script>
+  <script type="text/javascript" src="/js/libs/chess.js"></script>
+
+</head>
+
+<body>
+  <header id="header"></header>
+  <div id="bg"></div>
+  <div id="section">
+    <br>
+    <div id="info">
+      <p>select/deselect options to customise game rules</p>
+      <p>choose to start as either white or black and make any move to begin</p>
+    </div>
+    <div id="game">
+      <div id="board" style="width:30rem;"></div>
+      <br>
+      <div style="padding-left: 5rem;">
+        <h3>Options</h3>
+        
+        <label class="container">
+          <input type="checkbox" id="self-capture" value="true"></input>
+          <span class="checkmark">Allow Self-Captures</span>
+        </label>
+        <div class="break"></div>
+
+        <div class="break"></div>
+        <button id="startBtn">Start Position</button>
+        <button id="clearBtn">Clear Board</button>
+      </div>
+    </div>
+  </div>
+  <footer id="footer"></footer>
+  <script src="/js/app.js"></script>
+
+</body>
+
+</html>
